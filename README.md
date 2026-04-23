@@ -71,19 +71,13 @@ To view your saved bags in RViz:
 ## 🕵️‍♂️ Troubleshooting: Identifying a New GNSS IP
 If your new sensor is "hiding" and Swift Console can't find it via Ethernet:
 
-### Method 1: The "Shared" Trap (Fastest)
-1. In Ubuntu Network Settings, set your Wired interface to **"Shared to other computers"**.
-2. Power cycle the GNSS.
-3. Run `arp -a` and look for an IP starting with `10.42.0.x`.
 
-### Method 2: The "Boot Listener" (For Rugged Duro units)
+### The "Boot Listener" 
 1. Power off the GNSS.
 2. Run: `sudo tcpdump -i <interface_name> -n arp`
 3. Power on the GNSS.
 4. Look for the "tell" IP: `ARP, Request who-has 192.168.0.1 tell 192.168.0.222`
 
-### Method 3: The USB Backdoor
-Connect via a standard Micro-USB/USB-C cable. Select **Serial/USB** in Swift Console to bypass networking entirely.
 
 ---
 
