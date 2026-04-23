@@ -19,7 +19,7 @@ from sbp.navigation import SBP_MSG_POS_LLH, MsgPosLLH
 
 import threading
 
-GNSS_IP = "169.254.56.64"
+GNSS_IP = "192.168.0.222" # New Sensor Default
 GNSS_PORT = 55555
 
 class SBPBridgeNode(Node):

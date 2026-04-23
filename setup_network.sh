@@ -12,8 +12,8 @@ sudo pkill -x gpsd 2>/dev/null || true
 sudo systemctl stop gpsd.socket gpsd.service 2>/dev/null || true
 
 # 2. Reset the Network Routes (Forces LiDAR traffic to the native port)
-# Adjust 'enp3s0' if the interface name is different on the new machine
-INTERFACE="enp3s0"
+# Adjust 'enx207bd2dac60d' if the interface name is different on the new machine
+INTERFACE="enx207bd2dac60d"
 LIDAR_IP="169.254.51.134"
 
 echo "[1/2] Resetting routes for $LIDAR_IP via $INTERFACE..."
