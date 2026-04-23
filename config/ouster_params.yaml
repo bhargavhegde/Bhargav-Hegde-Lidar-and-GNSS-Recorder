@@ -1,0 +1,5 @@
+/ouster/os_driver:
+  ros__parameters:
+    sensor_hostname: '169.254.51.134'
+    lidar_mode: '1024x10'
+    timestamp_mode: 'TIME_FROM_PTP_1588'
